@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="نام و نام خانوادگی"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextname" android:gravity="right"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  android:text="جنسیت"/>
+    <RadioGroup android:orientation="horizontal"
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مرد"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="زن" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="سن"/>
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:id="@+id/textViewAge" android:text="0"/>
+    <SeekBar
+    android:id="@+id/seekBarAge"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="visible"
+        android:max="100"
+        android:progress="1"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="علاقه مندیها"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="horizontal">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/checkboxNet" android:text=".Net"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/checkboxDelphi" android:text="Delphi" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/checkboxAndroid" android:text="Android"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="رضایتمندی" />
+    <EditText android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="right" android:id="@+id/editTextRating"/>
+
+    <Button
+        android:layout_width="wrap_content" android:id="@+id/buttonSave"
+        android:layout_height="wrap_content" android:text="ثبت مشخصات" android:layout_gravity="center_horizontal"/>
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/ratingBarRating" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:id="@+id/textViewFinal" />
+</LinearLayout>
